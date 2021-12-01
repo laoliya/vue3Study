@@ -3,11 +3,13 @@
     <h1>这是首页</h1>
     <TodoList />
     <button @click="handle">更改图标</button>
+    <Test/>
 </template>
 
 <script setup>
 import TodoList from '../components/Todolist.vue'
 import useFavicon from '../utils/useFavicon'
+import Test from "../components/Test.vue";
 let {favicon} = useFavicon()
 function handle() {
     favicon.value = './OnePiece(15).jpg'
