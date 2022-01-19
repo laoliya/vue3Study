@@ -93,7 +93,7 @@ function useTodos() {
     return { title, todos, addTodo, clear, active, all, allDone };
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 span {
     color: v-bind(color);
 }
